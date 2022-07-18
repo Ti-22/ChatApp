@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bate karo!</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="main__container">
+        <section class="active__users">
+          <div class="users"></div>
+        </section>
+
+        <section class="chat__section">
+          <header>
+            <div class="logo">
+              <img class="brand__logo" src="/chatLogo.jpg" alt="logo" />
+              <h1 class="brand__name">Bate Karo!</h1>
+            </div>
+            <div class="userProfile">
+              <span class="userName"></span>
+            </div>
+          </header>
+
+          <div class="status_area">
+            <p></p>
+          </div>
+
+          <div class="message_area"></div>
+
+          <div class="writing_area">
+            <textarea
+              id="messageTextarea"
+              cols="30"
+              rows="1"
+              placeholder="Write Message!"
+            ></textarea>
+            <input type="button" id="sendBtn" value="Send" />
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
